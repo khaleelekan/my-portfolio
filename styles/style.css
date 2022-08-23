@@ -1,0 +1,126 @@
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.btn-dark, .btn-ligth, .btn-main {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-main {
+  color: #333;
+  background-color: #ffbc00;
+}
+.btn-ligth {
+  color: #333;
+  background-color: #f4f4f4;
+}
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333;
+}
+
+button[class^=btn-]:hover,
+a[class^=btn-]:hover,
+input[class^=btn-]:hover {
+  background-color: #ffbc00;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h2, h3, h4 {
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+#logo {
+  height: 70px;
+  width: 70px;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+#main-nav ul {
+  display: flex;
+}
+#main-nav li {
+  padding: 1rem 1.5rem;
+}
+#main-nav a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+}
+#main-nav a:hover {
+  border-color: #ccc;
+}
+#main-nav a.current {
+  border-color: #ffbc00;
+}
+
+#header-home {
+  background: url("../dist/img/idea-cover.jpg") no-repeat center right/cover;
+  height: 100vh;
+  color: #fff;
+}
+#header-home .head-content {
+  text-align: center;
+  padding-top: 20%;
+}
+#header-home .head-content h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+#header-home .head-content p {
+  margin-bottom: 10px;
+}
+#header-home .head-content a {
+  background-color: #f4f4ff;
+  padding: 5px 10px;
+  transition: all 0.5s;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+#header-home .head-content a:hover {
+  background-color: #ffbc00;
+}/*# sourceMappingURL=style.css.map */
