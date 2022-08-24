@@ -1,76 +1,90 @@
-
 @import 'variables';
 @import 'utility';
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    font-family:  'Dosis', sans-serif;
+body {
+    font-family: 'Dosis', sans-serif;
     line-height: 1.6;
     background: #fff;
 }
-a{
+
+a {
     text-decoration: none;
     color: $dark-color;
-    
+
 }
-h2,h3,h4{
+
+h2,
+h3,
+h4 {
     text-transform: uppercase;
 }
-ul{
+
+ul {
     list-style: none;
 }
+
 //main nav
-#logo{
+#logo {
     height: 70px;
     width: 70px;
 }
-#main-nav{
+
+#main-nav {
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
-    ul{
+
+    ul {
         display: flex;
     }
-    li{
+
+    li {
         padding: 1rem 1.5rem;
     }
-    a{
+
+    a {
         text-decoration: none;
         color: #fff;
         text-transform: uppercase;
         border-bottom: 3px transparent solid;
         padding-bottom: 0.5rem;
         transition: border-color 0.5s;
-        &:hover{
+
+        &:hover {
             border-color: $medium-color;
         }
-        &.current{
+
+        &.current {
             border-color: $main-color;
         }
     }
 }
-#header{
-    &-home{
+
+#header {
+    &-home {
         background: $bg-image no-repeat center right/cover;
         height: 100vh;
         color: #fff;
 
-        .head-content{
+        .head-content {
             text-align: center;
             padding-top: 20%;
 
-            h1{
+            h1 {
                 font-size: 4rem;
                 line-height: 1.2;
             }
-            p{
+
+            p {
                 margin-bottom: 10px;
             }
-            a{
+
+            a {
                 background-color: #f4f4ff;
                 padding: 5px 10px;
                 transition: all 0.5s;
@@ -78,13 +92,48 @@ ul{
                 border-radius: 20px;
                 cursor: pointer;
                 text-align: center;
-                &:hover{
+
+                &:hover {
                     background-color: $main-color;
                 }
             }
-          }
+        }
 
-          
+
     }
-    
+    &-inner{
+        background: $bg-image no-repeat 20% 30% /cover;
+        height: 5.5rem;
+        border-bottom: 3px solid $main-color;
+    }
+
+}
+
+#main-footer {
+    background-color: $dark-color;
+    color: #fff;
+    height: 5rem;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        align-items: center;
+
+        .social .fab {
+            margin-right: 1rem;
+            border: 2px #fff solid;
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            line-height: 20px;
+            text-align: center;
+            padding: 0.5rem;
+            transition: all 0.5s;
+
+            &:hover {
+                background: $main-color;
+            }
+        }
+    }
 }

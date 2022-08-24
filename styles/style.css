@@ -57,7 +57,9 @@ a {
   color: #333;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   text-transform: uppercase;
 }
 
@@ -123,4 +125,35 @@ ul {
 }
 #header-home .head-content a:hover {
   background-color: #ffbc00;
+}
+#header-inner {
+  background: url("../dist/img/idea-cover.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00;
+}
+
+#main-footer {
+  background-color: #333;
+  color: #fff;
+  height: 5rem;
+}
+#main-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+#main-footer .footer-content .social .fab {
+  margin-right: 1rem;
+  border: 2px #fff solid;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem;
+  transition: all 0.5s;
+}
+#main-footer .footer-content .social .fab:hover {
+  background: #ffbc00;
 }/*# sourceMappingURL=style.css.map */
