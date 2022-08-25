@@ -108,6 +108,35 @@ ul {
     }
 
 }
+#about{
+    &-a{text-align: center;
+        
+        .section-title{
+          font-size: 2rem;
+          display: block;
+          padding-bottom: 0.5rem;
+          text-align: center;
+          font-weight: 100;
+        }
+        .about-info{
+         margin: 20px 200px ;
+         display: grid;
+         grid-template-areas: 
+         'bio-image bio bio';
+         grid-gap: 1.2rem;
+
+         .bio-image{
+
+            grid-area: bio-image;
+         }
+         .bio{
+            grid-area: bio;
+            border-left: 3px solid $main-color;
+            padding: 0.8rem;
+         }
+        }
+    }
+}
 
 #main-footer {
     background-color: $dark-color;

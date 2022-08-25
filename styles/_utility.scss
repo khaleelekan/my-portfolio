@@ -37,6 +37,24 @@ a[class^='btn-']:hover,
 input[class^='btn-']:hover{
     background-color: $main-color;
 }
+.bg{
+    &-main{
+        background: $main-color;
+        color: set-text-color($main-color);
+    }
+    &-light{
+        background: $light-color;
+        color: set-text-color($light-color);
+    }
+    &-dark{
+        background: $dark-color;
+        color: set-text-color($dark-color);
+    }
+    &-medium{
+        background: $medium-color;
+        color: set-text-color($medium-color);
+    }
+}
 .lead{
     font-size: 1.3rem;
     margin-bottom: 2rem;
@@ -44,4 +62,14 @@ input[class^='btn-']:hover{
 
 .text-center{
     text-align: center;
+}
+.bottom-line{
+    border-bottom: 3px solid $main-color;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+img{
+    height: 200px;
+    width: 250px;
 }

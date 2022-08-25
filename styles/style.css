@@ -32,6 +32,23 @@ input[class^=btn-]:hover {
   background-color: #ffbc00;
 }
 
+.bg-main {
+  background: #ffbc00;
+  color: #fff;
+}
+.bg-light {
+  background: #f4f4f4;
+  color: #000;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.bg-medium {
+  background: #ccc;
+  color: #000;
+}
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
@@ -39,6 +56,18 @@ input[class^=btn-]:hover {
 
 .text-center {
   text-align: center;
+}
+
+.bottom-line {
+  border-bottom: 3px solid #ffbc00;
+  width: 100px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+img {
+  height: 200px;
+  width: 250px;
 }
 
 * {
@@ -130,6 +159,31 @@ ul {
   background: url("../dist/img/idea-cover.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00;
+}
+
+#about-a {
+  text-align: center;
+}
+#about-a .section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+}
+#about-a .about-info {
+  margin: 20px 200px;
+  display: grid;
+  grid-template-areas: "bio-image bio bio";
+  grid-gap: 1.2rem;
+}
+#about-a .about-info .bio-image {
+  grid-area: bio-image;
+}
+#about-a .about-info .bio {
+  grid-area: bio;
+  border-left: 3px solid #ffbc00;
+  padding: 0.8rem;
 }
 
 #main-footer {
