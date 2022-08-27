@@ -136,6 +136,50 @@ ul {
          }
         }
     }
+    &-b{
+        .container{
+            padding: 20px 200px ;
+        }
+    
+
+        .section-title{
+            font-size: 2rem;
+            display: block;
+            padding-bottom: 0.5rem;
+            text-align: center;
+            font-weight: 100;
+            
+        }
+        .progress{
+            overflow: hidden;
+            height: 20px;
+            background: $medium-color;
+            border-radius: 5px;
+            margin-bottom: 0.3rem;
+
+            div{
+                height: 100%;
+                color: #fff;
+                text-align: center;
+                background: $main-color;
+            }
+        }
+    }
+    &-c{
+        .container{
+            padding: 30px 250px;
+        }
+        .about-logos{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 0rem;
+
+            img{
+                width: 50%;
+                height: 50%;
+            }
+        }
+    }
 }
 
 #main-footer {

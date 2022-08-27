@@ -185,6 +185,41 @@ ul {
   border-left: 3px solid #ffbc00;
   padding: 0.8rem;
 }
+#about-b .container {
+  padding: 20px 200px;
+}
+#about-b .section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+}
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.3rem;
+}
+#about-b .progress div {
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  background: #ffbc00;
+}
+#about-c .container {
+  padding: 30px 250px;
+}
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0rem;
+}
+#about-c .about-logos img {
+  width: 50%;
+  height: 50%;
+}
 
 #main-footer {
   background-color: #333;
