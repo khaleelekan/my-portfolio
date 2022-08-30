@@ -136,6 +136,9 @@ ul {
   text-align: center;
   padding-top: 20%;
 }
+#header-home .head-content .txt-type {
+  color: #ffbc00;
+}
 #header-home .head-content h1 {
   font-size: 4rem;
   line-height: 1.2;
@@ -217,8 +220,17 @@ ul {
   grid-gap: 0rem;
 }
 #about-c .about-logos img {
+  background: white;
+  padding: 10px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 1px 1px #333;
   width: 50%;
   height: 50%;
+  transition: all 0.5s;
+}
+#about-c .about-logos img:hover {
+  transform: scaleY(1.2);
 }
 
 #main-footer {
