@@ -75,6 +75,10 @@ ul {
             text-align: center;
             padding-top: 20%;
 
+            .txt-type{
+                color: $main-color;
+            }
+
             h1 {
                 font-size: 4rem;
                 line-height: 1.2;
@@ -175,8 +179,18 @@ ul {
             grid-gap: 0rem;
 
             img{
+                background: white;
+                padding: 10px 10px;
+                border: 1px solid white;
+                border-radius: 5px;
+                box-shadow: 1px 1px $dark-color;
                 width: 50%;
                 height: 50%;
+                transition:all 0.5s;
+
+                &:hover{
+                       transform: scaleY(1.2);
+                }
             }
         }
     }
