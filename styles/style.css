@@ -139,6 +139,9 @@ ul {
 #header-home .head-content .txt-type {
   color: #ffbc00;
 }
+#header-home .head-content .txt-type .txt {
+  border-right: 0.2rem solid #ffbc00;
+}
 #header-home .head-content h1 {
   font-size: 4rem;
   line-height: 1.2;

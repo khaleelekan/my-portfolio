@@ -77,6 +77,10 @@ ul {
 
             .txt-type{
                 color: $main-color;
+
+                .txt{
+                    border-right: 0.2rem solid $main-color;
+                }
             }
 
             h1 {
