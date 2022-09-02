@@ -175,7 +175,7 @@ ul {
     }
     &-c{
         .container{
-            padding: 30px 250px;
+            padding: 60px 250px;
         }
         .about-logos{
             display: grid;
@@ -187,13 +187,15 @@ ul {
                 padding: 10px 10px;
                 border: 1px solid white;
                 border-radius: 5px;
-                box-shadow: 1px 1px $dark-color;
+                box-shadow: 1px 1px 15px $dark-color;
+                position: relative;
                 width: 50%;
                 height: 50%;
-                transition:all 0.5s;
+                top: 0;
+                transition:top  ease 0.5s;
 
                 &:hover{
-                       transform: scaleY(1.2);
+                    top: -50px;
                 }
             }
         }
@@ -235,6 +237,15 @@ ul {
         width: 50%;
         margin-bottom: 10px;
         border-radius: 5px;
+    }
+  }
+  &-b{
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        margin: 15px 0px;
+        padding: 10px 70px;
     }
   }
 }
