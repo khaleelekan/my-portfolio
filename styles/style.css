@@ -208,6 +208,11 @@ ul {
   border-bottom: 3px solid #ffbc00;
 }
 
+.community .header {
+  text-align: center;
+  margin: 20px;
+}
+
 #about-a {
   text-align: center;
 }
@@ -276,7 +281,7 @@ ul {
   transition: top ease 0.5s;
 }
 #about-c .about-logos img:hover {
-  top: -50px;
+  top: -30px;
 }
 
 #contact-a .text-fields {

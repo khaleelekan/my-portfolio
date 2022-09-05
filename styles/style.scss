@@ -116,6 +116,13 @@ ul {
     }
 
 }
+
+.community{
+    .header{
+        text-align: center;
+        margin: 20px;
+    }
+}
 #about{
     &-a{text-align: center;
         
@@ -195,7 +202,7 @@ ul {
                 transition:top  ease 0.5s;
 
                 &:hover{
-                    top: -50px;
+                    top: -30px;
                 }
             }
         }
@@ -249,6 +256,7 @@ ul {
     }
   }
 }
+
 
 #main-footer {
     background-color: $dark-color;
