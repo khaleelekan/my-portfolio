@@ -1,0 +1,40 @@
+//tablets
+@media (max-width: 800px) {
+    #header-home{
+        height: 40rem;
+
+        .header-content{
+            padding-top: 5rem;
+        }
+    }
+}
+
+// for smartphones
+@media (max-width: 500px) {
+    #main-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li{
+            padding: 1rem;
+        }
+    }
+    #header{
+        &-home{
+            height: 40rem;
+            border-bottom: 3px solid $main-color;
+            background-position: 30% 40%;
+        }
+        &-inner{
+            height: 10rem;
+        }
+    }
+    // grid stck
+    #about-b .progress,
+    #about-a ,
+    #about-c,
+    .items{
+        grid-template-columns: 1fr;
+    }
+}    
