@@ -373,10 +373,45 @@ ul {
   #header-inner {
     height: 10rem;
   }
-  #about-b .progress,
-#about-a,
-#about-c,
-.items {
+  #about-a .about-info {
+    display: grid;
+    margin: auto;
+    grid-template-areas: "bio-image" "bio";
+    grid-gap: 1rem;
+  }
+  #about-a .about-info .bio-image {
+    grid-area: bio-image;
+    border-radius: 5px;
+    margin: auto;
+  }
+  #about-a .about-info .bio {
+    grid-area: bio;
+    border-left: none;
+    border-top: 2px solid #ffbc00;
+    margin-bottom: 1.2rem;
+  }
+  #about-b {
+    display: grid;
     grid-template-columns: 1fr;
+  }
+  #about-b .container {
+    padding: 20px 10px;
+  }
+  #about-c .container {
+    display: grid;
+    margin: auto;
+    padding: 30px 50px;
+  }
+  #about-c .about-logos {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  #about-c .about-logos img {
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+  }
+  #about-c .about-logos img:hover {
+    top: -15px;
   }
 }/*# sourceMappingURL=style.css.map */
