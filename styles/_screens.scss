@@ -81,4 +81,59 @@
            }
         }
     }
-}    
+    #main-footer{
+        height: 7rem;
+
+      .footer-content{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px 0px;
+      }
+    }
+    #contact-a{
+        .container{
+            padding: 10px 5px;
+        }
+        .text-fields{
+            grid-template-areas: 
+            'name' 
+            'email'
+            'subject'
+            'phone'
+            'message';
+        }
+    }
+    #contact-b{
+        .container{
+            width: 80%;
+            padding: 15px 15px;
+            margin: auto;
+        }
+        .contact-info{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin: 10px 0px;
+            div{
+            padding: 10px 0px;
+            border-bottom: 1px solid #333;
+
+            &:last-child{
+                border-bottom: none;
+            }
+            }
+            
+        }
+       
+    }
+}  
+
+// landscape
+@media (max-height: 390px) {
+    #about{
+        .about-info{
+            grid-template-areas: 
+            'bio-image'
+            'bio';
+        }
+    }
+}
