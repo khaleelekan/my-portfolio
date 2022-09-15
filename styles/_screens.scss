@@ -81,6 +81,10 @@
            }
         }
     }
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 30px 15px;
+    }
     #main-footer{
         height: 7rem;
 

@@ -11,6 +11,7 @@
 .item{
     position: relative;
     background: $light-color;
+    align-self: center;
     overflow: hidden;
 
     &::after{
@@ -91,3 +92,4 @@
         margin: 0;
     }
 }
+@import 'screens';
