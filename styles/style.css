@@ -121,6 +121,7 @@ img {
 .item {
   position: relative;
   background: #f4f4f4;
+  align-self: center;
   overflow: hidden;
 }
 .item::after {
@@ -540,6 +541,10 @@ ul {
 }
 #main-footer .footer-content .social .fab:hover {
   background: #ffbc00;
+}
+
+.my-2 {
+  margin: 20px;
 }
 
 @media (max-width: 800px) {
