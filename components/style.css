@@ -529,6 +529,7 @@ ul {
   align-items: center;
 }
 #main-footer .footer-content .social .fab {
+  color: #f4f4ff;
   margin-right: 1rem;
   border: 2px #fff solid;
   border-radius: 50%;
