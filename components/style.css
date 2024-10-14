@@ -195,46 +195,65 @@ img {
     height: 10rem;
   }
   #about-a .about-info {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
     margin: auto;
-    grid-template-areas: "bio-image" "bio";
-    grid-gap: 1rem;
-  }
-  #about-a .about-info .bio-image {
-    grid-area: bio-image;
-    border-radius: 5px;
-    margin: auto;
-  }
-  #about-a .about-info .bio {
-    grid-area: bio;
+}
+
+#about-a .about-info .bio-image {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto; /* Ensure the image maintains its aspect ratio */
+    width: 100%; /* Allow image to take full width within its container */
+    max-width: 400px; /* Restrict max size on larger screens */
+}
+
+#about-a .about-info .bio {
+    flex: 1; /* Allow the bio text to take the remaining space */
     border-left: none;
     border-top: 2px solid #ffbc00;
     margin-bottom: 1.2rem;
-  }
-  #about-b {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  #about-b .container {
-    padding: 20px 10px;
-  }
-  #about-c .container {
-    display: grid;
-    margin: auto;
-    padding: 30px 50px;
-  }
-  #about-c .about-logos {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-  }
-  #about-c .about-logos img {
-    padding: 5px;
-    width: 20px;
-    height: 20px;
-  }
-  #about-c .about-logos img:hover {
-    top: -15px;
-  }
+    padding-top: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    #about-a .about-info {
+        flex-direction: column; /* Stack content vertically on medium screens */
+        gap: 1rem;
+        text-align: center; /* Center the content for better aesthetics */
+    }
+
+    #about-a .about-info .bio {
+        border-top: 2px solid #ffbc00;
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #about-a .about-info {
+        flex-direction: column;
+        align-items: center; /* Ensure content is centered on smaller screens */
+        text-align: center;
+        gap: 1rem;
+    }
+
+    #about-a .about-info .bio-image {
+        width: 80%; /* Reduce the width of the image on smaller screens */
+        max-width: 250px; /* Ensure the image does not stretch too much */
+    }
+
+    #about-a .about-info .bio {
+        padding-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
   #projects {
     grid-template-columns: repeat(1, 1fr);
     margin: 30px 20px;
